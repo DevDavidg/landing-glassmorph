@@ -3,598 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    
-    <title>LaunchFlow - Plataforma de Gestión y Automatización para Equipos | Beta 2025</title>
-    <meta name="description" content="🚀 Centralizá tu equipo, automatizá tu flujo. LaunchFlow es ideal para agencias y startups que buscan escalar con IA, automatización y dashboards en tiempo real. Por David Guillen.">
-    <meta name="keywords" content="gestión equipos, automatización, marketing, desarrollo, startups, agencias, dashboards, IA, LaunchFlow, David Guillen">
-    <meta name="author" content="David Guillen - Front End & Mobile Dev">
-    <meta name="robots" content="index, follow">
-    <link rel="canonical" href="https://launchflow.dev">
-    
-    
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://launchflow.dev">
-    <meta property="og:title" content="LaunchFlow - Plataforma de Gestión y Automatización para Equipos">
-    <meta property="og:description" content="Centralizá tu equipo, automatizá tu flujo. Ideal para agencias y startups. Por David Guillen.">
-    <meta property="og:image" content="https://launchflow.dev/assets/og-launchflow.jpg">
-    <meta property="og:image:width" content="1200">
-    <meta property="og:image:height" content="630">
-    <meta property="og:locale" content="es_AR">
-    <meta property="og:site_name" content="LaunchFlow">
-    
-    
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:url" content="https://launchflow.dev">
-    <meta name="twitter:title" content="LaunchFlow - Plataforma de Gestión y Automatización para Equipos">
-    <meta name="twitter:description" content="Centralizá tu equipo, automatizá tu flujo. Ideal para agencias y startups. Por David Guillen.">
-    <meta name="twitter:image" content="https://launchflow.dev/assets/twitter-launchflow.jpg">
-    <meta name="twitter:creator" content="@davidguillen_dev">
-    
-    
-    <meta name="theme-color" content="#667eea">
-    <meta name="msapplication-TileColor" content="#667eea">
-    <meta name="application-name" content="LaunchFlow">
-    <meta name="apple-mobile-web-app-title" content="LaunchFlow">
-    <meta name="mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-    
-    <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🚀</text></svg>">
-    <link rel="manifest" href="/site.webmanifest">
-    
-    
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "LaunchFlow",
-        "description": "Plataforma de gestión y automatización para equipos de marketing y desarrollo, pensada para startups y agencias. Centraliza equipos y automatiza flujos de trabajo.",
-        "url": "https://launchflow.dev",
-        "applicationCategory": "BusinessApplication",
-        "operatingSystem": "Web Browser",
-        "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "description": "Acceso beta gratuito por 6 meses - Primeros 1.000 usuarios"
-        },
-        "author": {
-            "@type": "Person",
-            "name": "David Guillen",
-            "jobTitle": "Front End & Mobile Developer",
-            "url": "https://launchflow.dev",
-            "email": "dev.davidg@gmail.com"
-        },
-        "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "ratingCount": "347"
-        }
-    }
-    </script>
-    
-    
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/features.css">
-    
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
-    
-    <script src="https://unpkg.com/lucide@latest" defer></script>
-    
-    
-    <style>
-        @font-face {
-            font-family: 'Inter';
-            font-display: swap;
-        }
-        
-        img {
-            loading: lazy;
-            decoding: async;
-        }
-        
-        .stat-number {
-            min-width: 3ch;
-            text-align: right;
-        }
-    </style>
+    <title>BetaLaunch - Lanza tu startup como un profesional</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
-    
-    <div id="scroll-progress" class="scroll-progress"></div>
-    
-    
-    <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
-        <i data-lucide="sun" class="theme-icon theme-icon-light"></i>
-        <i data-lucide="moon" class="theme-icon theme-icon-dark"></i>
-    </button>
-    
-    
-    <div id="loader" class="loader">
-        <div class="loader-content">
-            <div class="loader-circle"></div>
-            <div class="loader-text">Cargando experiencia...</div>
-            <div class="loader-progress">
-                <div class="loader-progress-bar"></div>
-            </div>
-        </div>
-    </div>
-
-    
     <nav class="navbar">
         <div class="nav-container">
-            <div class="nav-logo">
-                                        <span class="logo-text">LaunchFlow</span>
-                <span class="beta-badge">BETA</span>
+            <div class="nav-brand">
+                <i class="fas fa-rocket"></i>
+                <span>BetaLaunch</span>
             </div>
-            <div class="nav-menu">
-                <a href="#home" class="nav-link">Inicio</a>
-                <a href="#features" class="nav-link">Features</a>
-                <a href="#waitlist" class="nav-link">Acceso Anticipado</a>
-            </div>
-            <div class="nav-toggle" id="nav-toggle">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="features.html">Características</a></li>
+                <li><a href="pricing.html">Beta Access</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+                <li><a href="contact.html">Contacto</a></li>
+            </ul>
         </div>
     </nav>
 
-    
-    <section id="home" class="hero">
-        <div class="hero-bg">
-            <div class="floating-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-                <div class="shape shape-4"></div>
-                <div class="shape shape-5"></div>
-            </div>
-        </div>
-        <div class="hero-container">
+    <main>
+        <section class="hero">
             <div class="hero-content">
-                <h1 class="hero-title">
-                    Centralizá tu equipo, 
-                    <span class="gradient-text">automatizá tu flujo.</span>
-                    Todo en un solo lugar.
-                </h1>
-                <p class="hero-subtitle">
-                    LaunchFlow es la plataforma ideal para agencias y startups que buscan escalar sus procesos con IA, automatización y dashboards en tiempo real. Desarrollada por David Guillen, Front End & Mobile Dev.
-                </p>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="347">0</span>
-                        <span class="stat-label">Beta Testers</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="96">0</span>
-                        <span class="stat-label">% Satisfacción</span>
-                    </div>
-                    <div class="stat-item">
-                        <span class="stat-number" data-count="1000">0</span>
-                        <span class="stat-label">Cupos Restantes</span>
-                    </div>
-                </div>
-                <div class="hero-cta">
-                    <button class="btn btn-primary" onclick="scrollToWaitlist()" aria-label="Solicitar acceso anticipado a LaunchFlow">
-                        Solicitar acceso anticipado
-                        <i data-lucide="arrow-up-right" aria-hidden="true"></i>
-                    </button>
-                    <button class="btn btn-secondary" onclick="togglePartyMode()" aria-label="Ver demo interactiva">
-                        <i data-lucide="play-circle" aria-hidden="true"></i>
-                        Ver demo interactiva
-                    </button>
+                <h1>Convierte tu idea en una startup exitosa</h1>
+                <p>BetaLaunch es la plataforma definitiva para validar, lanzar y escalar tu producto digital con herramientas profesionales y métricas en tiempo real</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary">Unirse a la Beta</button>
+                    <button class="btn-secondary">Ver Demo en Vivo</button>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="hero-image">
+                <i class="fas fa-chart-line"></i>
+            </div>
+        </section>
 
-    
-    <section id="features" class="features">
-        <div class="features-container">
-            <div class="section-header">
-                <h2 class="section-title">Potenciá tu equipo con LaunchFlow</h2>
-                <p class="section-subtitle">Todo lo que necesitás para gestionar y automatizar tu flujo de trabajo</p>
-            </div>
-            
-            <div class="features-tabs" role="tablist" aria-label="Características de la plataforma">
-                <div class="tabs-nav">
-                    <button class="tab-btn active" data-tab="automation" role="tab" aria-selected="true" aria-controls="automation" id="tab-automation">
-                        <div class="tab-icon">
-                            <i data-lucide="zap" aria-hidden="true"></i>
-                        </div>
-                        <span>Automatización de Tareas</span>
-                    </button>
-                    <button class="tab-btn" data-tab="analytics" role="tab" aria-selected="false" aria-controls="analytics" id="tab-analytics">
-                        <div class="tab-icon">
-                            <i data-lucide="bar-chart-3" aria-hidden="true"></i>
-                        </div>
-                        <span>Dashboards Analíticos</span>
-                    </button>
-                    <button class="tab-btn" data-tab="collaboration" role="tab" aria-selected="false" aria-controls="collaboration" id="tab-collaboration">
-                        <div class="tab-icon">
-                            <i data-lucide="users" aria-hidden="true"></i>
-                        </div>
-                        <span>Gestión Colaborativa</span>
-                    </button>
-                    <button class="tab-btn" data-tab="security" role="tab" aria-selected="false" aria-controls="security" id="tab-security">
-                        <div class="tab-icon">
-                            <i data-lucide="shield-check" aria-hidden="true"></i>
-                        </div>
-                        <span>Seguridad Corporativa</span>
-                    </button>
+        <section class="features-preview">
+            <h2>¿Por qué BetaLaunch cambiará tu forma de lanzar productos?</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <i class="fas fa-chart-bar"></i>
+                    <h3>Analytics Inteligente</h3>
+                    <p>Dashboards que predicen el éxito de tu launch con IA y datos en tiempo real</p>
                 </div>
-                
-                <div class="tabs-content">
-                    <div class="tab-panel active" id="automation" role="tabpanel" aria-labelledby="tab-automation">
-                        <div class="feature-content">
-                            <div class="feature-visual">
-                                <div class="feature-card">
-                                    <div class="card-header">
-                                        <span class="card-title">Automatización Inteligente</span>
-                                        <div class="card-status active"></div>
-                                    </div>
-                                    <div class="automation-demo">
-                                        <div class="automation-step">
-                                            <div class="step-icon">📥</div>
-                                            <div class="step-text">Datos Entrantes</div>
-                                        </div>
-                                        <div class="automation-arrow">→</div>
-                                        <div class="automation-step">
-                                            <div class="step-icon">🧠</div>
-                                            <div class="step-text">Procesamiento IA</div>
-                                        </div>
-                                        <div class="automation-arrow">→</div>
-                                        <div class="automation-step">
-                                            <div class="step-icon">⚡</div>
-                                            <div class="step-text">Acción Automática</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-info">
-                                <h3>Automatización de Tareas</h3>
-                                <p>Creamos flujos personalizados que integran tus apps favoritas y automatizan tareas repetitivas. Desde Notion hasta Firebase.</p>
-                                <ul class="feature-list">
-                                    <li>Flujos personalizados para cada equipo</li>
-                                    <li>Integración con Notion, Firebase, Slack</li>
-                                    <li>Automatización de reportes y notificaciones</li>
-                                    <li>APIs custom para conectar cualquier herramienta</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-panel" id="analytics" role="tabpanel" aria-labelledby="tab-analytics">
-                        <div class="feature-content">
-                            <div class="feature-visual">
-                                <div class="feature-card">
-                                    <div class="card-header">
-                                        <span class="card-title">Dashboard Analytics</span>
-                                        <div class="card-status active"></div>
-                                    </div>
-                                    <div class="analytics-demo">
-                                        <div class="chart-container">
-                                            <div class="chart-bar" style="height: 60%"></div>
-                                            <div class="chart-bar" style="height: 80%"></div>
-                                            <div class="chart-bar" style="height: 45%"></div>
-                                            <div class="chart-bar" style="height: 90%"></div>
-                                            <div class="chart-bar" style="height: 75%"></div>
-                                        </div>
-                                        <div class="analytics-metrics">
-                                            <div class="metric">
-                                                <span class="metric-value">+127%</span>
-                                                <span class="metric-label">Productividad</span>
-                                            </div>
-                                            <div class="metric">
-                                                <span class="metric-value">-45%</span>
-                                                <span class="metric-label">Tiempo Perdido</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-info">
-                                <h3>Dashboards Analíticos</h3>
-                                <p>Visualizá métricas en tiempo real con paneles 100% editables y widgets hechos a medida para cada equipo.</p>
-                                <ul class="feature-list">
-                                    <li>Paneles 100% personalizables</li>
-                                    <li>Widgets hechos a medida</li>
-                                    <li>Métricas en tiempo real</li>
-                                    <li>Exportación automática de reportes</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-panel" id="collaboration" role="tabpanel" aria-labelledby="tab-collaboration">
-                        <div class="feature-content">
-                            <div class="feature-visual">
-                                <div class="feature-card">
-                                    <div class="card-header">
-                                        <span class="card-title">Colaboración en Vivo</span>
-                                        <div class="card-status active"></div>
-                                    </div>
-                                    <div class="collaboration-demo">
-                                        <div class="user-avatars">
-                                            <div class="avatar avatar-1">👨‍💻</div>
-                                            <div class="avatar avatar-2">👩‍💼</div>
-                                            <div class="avatar avatar-3">👨‍🎨</div>
-                                        </div>
-                                        <div class="collaboration-activity">
-                                            <div class="activity-item">
-                                                <span class="activity-user">Ana</span>
-                                                <span class="activity-text">editando documento...</span>
-                                            </div>
-                                            <div class="activity-item">
-                                                <span class="activity-user">Carlos</span>
-                                                <span class="activity-text">añadió comentario</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-info">
-                                <h3>Gestión Colaborativa</h3>
-                                <p>Compartí comentarios, tareas y documentos sin salir de la plataforma. Todo sincronizado.</p>
-                                <ul class="feature-list">
-                                    <li>Comentarios y tareas integradas</li>
-                                    <li>Documentos colaborativos en tiempo real</li>
-                                    <li>Sincronización automática</li>
-                                    <li>Historial completo de cambios</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="tab-panel" id="security" role="tabpanel" aria-labelledby="tab-security">
-                        <div class="feature-content">
-                            <div class="feature-visual">
-                                <div class="feature-card">
-                                    <div class="card-header">
-                                        <span class="card-title">Centro de Seguridad</span>
-                                        <div class="card-status active"></div>
-                                    </div>
-                                    <div class="security-demo">
-                                        <div class="security-shield">
-                                            <div class="shield-icon">🛡️</div>
-                                            <div class="security-layers">
-                                                <div class="layer layer-1"></div>
-                                                <div class="layer layer-2"></div>
-                                                <div class="layer layer-3"></div>
-                                            </div>
-                                        </div>
-                                        <div class="security-status">
-                                            <div class="status-item">
-                                                <span class="status-icon">✅</span>
-                                                <span class="status-text">Cifrado AES-256</span>
-                                            </div>
-                                            <div class="status-item">
-                                                <span class="status-icon">✅</span>
-                                                <span class="status-text">2FA Activo</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="feature-info">
-                                <h3>Seguridad Corporativa</h3>
-                                <p>Cifrado AES-256, autenticación 2FA y backups automáticos bajo cumplimiento GDPR.</p>
-                                <ul class="feature-list">
-                                    <li>Cifrado AES-256 en todos los datos</li>
-                                    <li>Autenticación 2FA obligatoria</li>
-                                    <li>Backups automáticos diarios</li>
-                                    <li>Cumplimiento GDPR completo</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="feature-card">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Gestión de Beta Testers</h3>
+                    <p>Automatiza el feedback, segmenta usuarios y convierte testers en clientes</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-bullhorn"></i>
+                    <h3>Marketing Automation</h3>
+                    <p>Campañas de lanzamiento que se ejecutan solas y maximizan tu alcance</p>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
-    
-    <section id="waitlist" class="waitlist">
-        <div class="waitlist-container">
-            <div class="waitlist-content">
-                <div class="waitlist-header">
-                    <h2 class="waitlist-title">Unite a la beta cerrada de LaunchFlow</h2>
-                    <p class="waitlist-subtitle">
-                        Estamos validando nuestro MVP con equipos reales. Los primeros 1.000 recibirán 6 meses de acceso gratuito.
-                    </p>
-                </div>
-                
-                <div class="waitlist-form-container">
-                    <form class="waitlist-form" id="waitlistForm" role="form" aria-label="Formulario de lista de espera">
-                        <div class="form-group">
-                            <label for="email" class="form-label">Dirección de Email</label>
-                            <div class="input-container">
-                                <input 
-                                    type="email" 
-                                    id="email" 
-                                    name="email" 
-                                    class="form-input" 
-                                    placeholder="ej: mariana@startup.com"
-                                    required
-                                    aria-describedby="email-help"
-                                    autocomplete="email"
-                                    aria-invalid="false"
-                                >
-                                <div class="input-icon" aria-hidden="true">
-                                    <i data-lucide="mail"></i>
-                                </div>
-                            </div>
-                            <div id="email-help" class="sr-only">Introduce tu email para recibir acceso anticipado a LaunchFlow</div>
-                        </div>
-                        
-                        <button type="submit" class="btn btn-primary btn-full" aria-describedby="submit-help">
-                            <span class="btn-text">Unirme a la Lista de Espera</span>
-                            <div class="btn-loader" aria-hidden="true">
-                                <div class="spinner"></div>
-                            </div>
-                        </button>
-                        <div id="submit-help" class="sr-only">Al enviar te unirás a nuestra lista de espera para acceso beta gratuito</div>
-                        
-                        <div class="form-footer">
-                            <p class="form-disclaimer">
-                                * Al unirte aceptas recibir actualizaciones sobre el desarrollo. 
-                                Puedes cancelar en cualquier momento.
-                            </p>
-                        </div>
-                    </form>
-                    
-                    <div class="waitlist-benefits">
-                        <h3 class="benefits-title">Lo que obtienes:</h3>
-                        <div class="benefits-list">
-                            <div class="benefit-item">
-                                <div class="benefit-icon">
-                                <i data-lucide="rocket" aria-hidden="true"></i>
-                            </div>
-                                <div class="benefit-text">
-                                    <strong>Acceso Anticipado</strong>
-                                    <span>Sé el primero en probar nuevas features</span>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">
-                                <i data-lucide="gem" aria-hidden="true"></i>
-                            </div>
-                                <div class="benefit-text">
-                                    <strong>Cuenta Premium Gratis</strong>
-                                    <span>6 meses sin costo durante la beta</span>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">
-                                <i data-lucide="phone" aria-hidden="true"></i>
-                            </div>
-                                <div class="benefit-text">
-                                    <strong>Soporte Prioritario</strong>
-                                    <span>Línea directa con nuestro equipo</span>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <div class="benefit-icon">
-                                <i data-lucide="gift" aria-hidden="true"></i>
-                            </div>
-                                <div class="benefit-text">
-                                    <strong>Descuentos Exclusivos</strong>
-                                    <span>50% de descuento al lanzamiento oficial</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    
     <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <div class="footer-logo">
-                        <span class="logo-text">LaunchFlow</span>
-                        <span class="beta-badge">BETA</span>
-                    </div>
-                    <p class="footer-tagline">
-                        Plataforma de gestión y automatización para equipos de marketing y desarrollo, pensada para startups y agencias. Desarrollada por David Guillen, Front End & Mobile Dev.
-                    </p>
-                    <div class="footer-social">
-                        <a href="#" class="social-link" aria-label="Síguenos en Twitter">
-                            <i data-lucide="twitter" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Conéctate en LinkedIn">
-                            <i data-lucide="linkedin" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Síguenos en GitHub">
-                            <i data-lucide="github" aria-hidden="true"></i>
-                        </a>
-                        <a href="#" class="social-link" aria-label="Únete a nuestro Discord">
-                            <i data-lucide="message-circle" aria-hidden="true"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4 class="footer-title">Producto</h4>
-                        <ul class="footer-list">
-                            <li><a href="#" class="footer-link">Demo</a></li>
-                            <li><a href="#" class="footer-link">Pricing</a></li>
-                            <li><a href="#" class="footer-link">Blog</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-title">Recursos</h4>
-                        <ul class="footer-list">
-                            <li><a href="#" class="footer-link">Documentación</a></li>
-                            <li><a href="#" class="footer-link">API</a></li>
-                            <li><a href="#" class="footer-link">Comunidad</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-title">Legal</h4>
-                        <ul class="footer-list">
-                            <li><a href="#" class="footer-link">Privacidad</a></li>
-                            <li><a href="#" class="footer-link">Términos</a></li>
-                            <li><a href="#" class="footer-link">Cookies</a></li>
-                            <li><a href="#" class="footer-link">Licencias</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4 class="footer-title">Contacto</h4>
-                        <ul class="footer-list">
-                            <li><a href="mailto:dev.davidg@gmail.com" class="footer-link">dev.davidg@gmail.com</a></li>
-                            <li><span class="footer-text">Almagro, Buenos Aires</span></li>
-                            <li><a href="tel:+5401170030947" class="footer-link">+54 011 70030947</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="footer-bottom">
-                <p class="footer-copy">
-                    © 2025 LaunchFlow. Todos los derechos reservados. 
-                    <span class="footer-heart">Desarrollado por David Guillen con ❤️</span>
-                </p>
-            </div>
-        </div>
+        <p>&copy; 2025 BetaLaunch by David Guillen. Desarrollado con pasión para makers y founders.</p>
     </footer>
 
-    <script src="js/main.js" defer></script>
-    
-    
-    <script defer>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Ensure Lucide is loaded before creating icons
-            if (typeof lucide !== 'undefined') {
-                lucide.createIcons();
-                console.log('🎨 Lucide icons initialized on DOM ready');
-            } else {
-                // Retry mechanism for async loading
-                const checkLucide = setInterval(() => {
-                    if (typeof lucide !== 'undefined') {
-                        lucide.createIcons();
-                        console.log('🎨 Lucide icons initialized after retry');
-                        clearInterval(checkLucide);
-                    }
-                }, 50);
-                
-                // Stop trying after 5 seconds
-                setTimeout(() => clearInterval(checkLucide), 5000);
-            }
-        });
-    </script>
+    <script src="./js/script.js"></script>
 </body>
-</html> 
+</html>

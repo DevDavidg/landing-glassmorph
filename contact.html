@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - BetaLaunch</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <i class="fas fa-rocket"></i>
+                <span>BetaLaunch</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="features.html">Características</a></li>
+                <li><a href="pricing.html">Beta Access</a></li>
+                <li><a href="about.html">Sobre el Proyecto</a></li>
+                <li><a href="contact.html" class="active">Contacto</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main>
+        <section class="page-header">
+            <h1>Conectemos y hablemos de tu próximo launch</h1>
+            <p>¿Tienes una startup? ¿Un producto listo para lanzar? Let's talk!</p>
+        </section>
+
+        <section class="contact-content">
+            <div class="contact-info">
+                <h2>Contacta Directamente a David</h2>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <h4>Email Principal</h4>
+                        <p>david@betalaunch.co</p>
+                        <small>Respuesta en < 24hrs</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-linkedin"></i>
+                    <div>
+                        <h4>LinkedIn</h4>
+                        <p>linkedin.com/in/davidguillen-dev</p>
+                        <small>Perfecto para networking</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-twitter"></i>
+                    <div>
+                        <h4>Twitter/X</h4>
+                        <p>@davidg_dev</p>
+                        <small>Compartiendo insights diarios</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-github"></i>
+                    <div>
+                        <h4>GitHub</h4>
+                        <p>github.com/davidguillen</p>
+                        <small>Código y proyectos open source</small>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>LATAM (Remote First)<br>Timezone: GMT-5</p>
+                        <small>Disponible para colaboraciones globales</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-form">
+                <h2>¿Tienes una startup que lanzar?</h2>
+                <p style="margin-bottom: 20px; color: #666;">Cuéntame sobre tu proyecto y cómo BetaLaunch puede ayudarte a hacer el lanzamiento más exitoso de tu carrera.</p>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Tu nombre o startup</label>
+                        <input type="text" id="name" name="name" placeholder="ej: Ana García / MiStartup" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" placeholder="ej: ana@mistartup.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">¿En qué puedo ayudarte?</label>
+                        <select id="subject" name="subject" required>
+                            <option value="">Selecciona una opción</option>
+                            <option value="beta-access">Quiero acceso beta a BetaLaunch</option>
+                            <option value="consulting">Consultoría de lanzamiento</option>
+                            <option value="partnership">Partnership/Colaboración</option>
+                            <option value="hiring">Oportunidad laboral</option>
+                            <option value="feedback">Feedback sobre BetaLaunch</option>
+                            <option value="other">Otro</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Cuéntame sobre tu proyecto</label>
+                        <textarea id="message" name="message" rows="5" placeholder="ej: Estoy desarrollando una app de fintech y necesito estrategia de lanzamiento..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensaje</button>
+                </form>
+                
+                <div style="margin-top: 30px; padding: 20px; background: rgba(255,255,255,0.1); border-radius: 10px;">
+                    <h4>💡 Para founders serios:</h4>
+                    <p style="font-size: 14px; margin: 10px 0;">Si estás validando una idea, tienes un MVP listo, o estás preparando un lanzamiento, menciona:</p>
+                    <ul style="font-size: 14px; margin-left: 20px;">
+                        <li>Stage actual de tu producto</li>
+                        <li>Target de lanzamiento</li>
+                        <li>Principal challenge que enfrentas</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 BetaLaunch by David Guillen. Desarrollado con pasión para makers y founders.</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
