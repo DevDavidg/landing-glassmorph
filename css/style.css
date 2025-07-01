@@ -663,6 +663,7 @@ section {
 .comparison-table th {
   font-size: var(--font-size-lg);
   color: var(--text-primary);
+  text-align: center;
 }
 
 .comparison-table tbody tr:hover {
@@ -2072,7 +2073,7 @@ fieldset legend {
   padding: var(--space-lg);
   background: var(--glass-bg);
   border-radius: var(--radius-lg);
-  margin-bottom: var(--space-md);
+  margin-top: var(--space-md);
   border: 1px solid var(--glass-border);
 }
 
