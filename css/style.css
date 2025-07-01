@@ -484,6 +484,11 @@ section {
   transition: all var(--transition-normal);
   transform: translateY(-5px);
   box-shadow: var(--shadow-glass);
+  ul {
+    list-style: none;
+    text-align: left;
+    padding-top: 1em;
+  }
 }
 
 .feature-card:hover {
@@ -2108,23 +2113,6 @@ fieldset legend {
   flex-wrap: wrap;
   position: relative;
   align-items: stretch;
-}
-
-.process-steps::before {
-  content: "";
-  position: absolute;
-  top: 70px;
-  left: 15%;
-  right: 15%;
-  height: 2px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    var(--primary-color),
-    transparent
-  );
-  opacity: 0.3;
-  z-index: 0;
 }
 
 .step {
