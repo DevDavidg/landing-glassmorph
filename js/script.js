@@ -122,7 +122,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const commitmentValue = betaApplicationForm.querySelector(".range-value");
 
     if (commitmentSlider && commitmentValue) {
-      // Update on initial load
       commitmentValue.textContent = `${commitmentSlider.value} horas/semana`;
 
       commitmentSlider.addEventListener("input", (e) => {
@@ -152,7 +151,6 @@ document.addEventListener("DOMContentLoaded", function () {
       );
       let isStepValid = true;
 
-      // Validate standard inputs
       inputs.forEach((input) => {
         if (!input.checkValidity()) {
           isStepValid = false;
@@ -162,7 +160,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
       });
 
-      // Special validation for checkbox groups that need at least one checked
       const interestCheckboxes = currentFieldset.querySelectorAll(
         'input[name="interests[]"]'
       );
@@ -182,7 +179,6 @@ document.addEventListener("DOMContentLoaded", function () {
       return isStepValid;
     }
 
-    // Inicializar
     showStep(currentStep);
 
     prevBtn.addEventListener("click", () => {
@@ -193,7 +189,6 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     nextBtn.addEventListener("click", () => {
-      // Limpiar errores previos antes de validar
       fieldsets[currentStep]
         .querySelectorAll(".invalid")
         .forEach((el) => el.classList.remove("invalid"));
@@ -211,7 +206,6 @@ document.addEventListener("DOMContentLoaded", function () {
       }
     });
 
-    // Prevent normal submit for demo, simulate success then reset
     betaApplicationForm.addEventListener("submit", (e) => {
       e.preventDefault();
       if (!validateStep(currentStep)) {
@@ -235,14 +229,13 @@ document.addEventListener("DOMContentLoaded", function () {
           button.classList.remove("btn-success");
           button.disabled = false;
           betaApplicationForm.reset();
-          // Actualizar el valor del slider en el reset
           if (commitmentSlider) {
             commitmentValue.textContent = `${commitmentSlider.value} horas/semana`;
           }
           currentStep = 0;
           showStep(currentStep);
         }, 4000);
-      }, 1500); // Simular delay de red
+      }, 1500);
     });
   }
 
