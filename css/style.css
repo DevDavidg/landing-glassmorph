@@ -591,12 +591,12 @@ section {
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   position: sticky;
-  top: 80px; /* height of navbar */
+  top: 80px;
   z-index: 900;
 }
 
 .features-navigation h2 {
-  display: none; /* Visually hide, but accessible for screen readers */
+  display: none;
 }
 
 .anchor-menu ul {
@@ -1533,7 +1533,6 @@ section {
   }
 }
 
-/* Iconos de éxito y error para tablas de comparación */
 .success-icon {
   color: var(--success-color) !important;
 }
@@ -1542,7 +1541,6 @@ section {
   color: var(--error-color) !important;
 }
 
-/* Estilos para iframes */
 iframe {
   border: 0;
   border-radius: var(--radius-md);
@@ -1550,7 +1548,6 @@ iframe {
   height: 400px;
 }
 
-/* Contenedores específicos para multimedia */
 .video-container,
 .map-container {
   margin: var(--space-xl) 0;
@@ -1568,7 +1565,6 @@ iframe {
   height: 400px;
 }
 
-/* Sección multimedia general */
 .multimedia-section {
   margin: var(--space-3xl) 0;
 }
@@ -1584,7 +1580,6 @@ iframe {
   color: var(--text-secondary);
 }
 
-/* Estilos adicionales para formularios mejorados */
 fieldset {
   border: none;
   border-top: 1px solid var(--glass-border);
@@ -1700,7 +1695,6 @@ fieldset legend {
   transform: scale(1);
 }
 
-/* Ocultamos los inputs que reemplazamos visualmente */
 #exp-1,
 #exp-2,
 #exp-3,
@@ -1735,7 +1729,6 @@ fieldset legend {
   }
 }
 
-/* Rediseño de informacion.html */
 .info-section,
 .events-section,
 .updates-section,
@@ -1891,7 +1884,7 @@ fieldset legend {
 
 .update-date {
   position: relative;
-  left: -2px; /* To center on the timeline */
+  left: -2px;
   background: var(--primary-color);
   color: var(--text-primary);
   border-radius: var(--radius-lg);
