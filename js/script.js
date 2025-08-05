@@ -1,4 +1,21 @@
 document.addEventListener("DOMContentLoaded", function () {
+  const hamburger = document.querySelector(".hamburger");
+  const navMenu = document.querySelector(".nav-menu");
+
+  if (hamburger && navMenu) {
+    hamburger.addEventListener("click", function () {
+      hamburger.classList.toggle("active");
+      navMenu.classList.toggle("active");
+    });
+
+    document.querySelectorAll(".nav-menu a").forEach((link) => {
+      link.addEventListener("click", function () {
+        hamburger.classList.remove("active");
+        navMenu.classList.remove("active");
+      });
+    });
+  }
+
   const navLinks = document.querySelectorAll(".nav-menu a");
   navLinks.forEach((link) => {
     link.addEventListener("click", function (e) {
@@ -30,19 +47,8 @@ document.addEventListener("DOMContentLoaded", function () {
         data[key] = value;
       }
 
-      const successMessage = document.createElement("div");
-      successMessage.className = "form-success-message";
-      successMessage.textContent =
-        "¡Aplicación enviada con éxito! Te contactaremos pronto.";
-      this.appendChild(successMessage);
-
-      this.reset();
-
-      setTimeout(() => {
-        if (successMessage.parentNode) {
-          successMessage.remove();
-        }
-      }, 5000);
+      // Redirigir a la página de gracias
+      window.location.href = "gracias.html";
     });
   }
 
